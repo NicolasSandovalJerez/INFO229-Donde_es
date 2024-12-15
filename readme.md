@@ -92,7 +92,7 @@ npm install
 ## 4. Configurar la base de datos
 
 - Crea la base de datos en PostgreSQL.
-- Ejecuta el archivo dump_bd_donde-es.sql dentro de la base de datos creada previamente.
+- Ejecuta el archivo docs/dump_bd_donde-es.sql dentro de la base de datos creada previamente.
 
 
 ### Despliegue y Ejecución
