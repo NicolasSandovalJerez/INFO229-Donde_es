@@ -94,20 +94,6 @@ HERE_MAPS_API_KEY=your_here_maps_key
 - Crea la base de datos en PostgreSQL.
 - Ejecuta el archivo dump_bd_donde-es.sql dentro de la base de datos creada previamente.
 
-### Estructura del Proyecto
-
-donde-es/
-├── public/               # Frontend
-│   ├── components/      # Páginas HTML
-│   ├── js/             # Scripts JavaScript
-│   │   ├── components/ # Componentes JS
-│   │   ├── services/   # Servicios
-│   │   └── utils/      # Utilidades
-│   └── styles/         # Estilos CSS
-└── server/             # Backend
-    ├── config/         # Configuración
-    ├── routes/         # Rutas API
-    └── server.js       # Entrada principal
 
 ### Despliegue y Ejecución
 
