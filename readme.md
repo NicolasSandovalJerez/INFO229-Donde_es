@@ -2,7 +2,7 @@
 
 **Descripción**
 
-**Donde Es** es una plataforma web que permite a los usuarios **crear, gestionar y descubrir eventos locales**. Utiliza **geolocalización** para mostrar eventos cercanos y ofrece funcionalidades avanzadas para la gestión de usuarios y eventos.
+**Donde Es** es una plataforma web que permite a los usuarios **crear, gestionar y descubrir eventos locales**. Utiliza **geolocalización** para mostrar eventos cercanos y ofrece pensadas funcionalidades para la gestión de usuarios y eventos.
 
 ---
 
