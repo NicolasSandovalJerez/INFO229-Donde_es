@@ -97,17 +97,17 @@ HERE_MAPS_API_KEY=your_here_maps_key
 ### Estructura del Proyecto
 
 donde-es/
-├── public/ # Frontend
-│ ├── components/ # Páginas HTML
-│ ├── js/ # Scripts JavaScript
-│ │ ├── components/ # Componentes JS
-│ │ ├── services/ # Servicios
-│ │ └── utils/ # Utilidades
-│ └── styles/ # Estilos CSS
-└── server/ # Backend
-├── config/ # Configuración
-├── routes/ # Rutas API
-└── server.js # Entrada principal
+├── public/               # Frontend
+│   ├── components/      # Páginas HTML
+│   ├── js/             # Scripts JavaScript
+│   │   ├── components/ # Componentes JS
+│   │   ├── services/   # Servicios
+│   │   └── utils/      # Utilidades
+│   └── styles/         # Estilos CSS
+└── server/             # Backend
+    ├── config/         # Configuración
+    ├── routes/         # Rutas API
+    └── server.js       # Entrada principal
 
 ### Despliegue y Ejecución
 
