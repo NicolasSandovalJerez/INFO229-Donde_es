@@ -70,22 +70,22 @@ npm install
 
 ### 3. Configurar variables de entorno
 
-## Crea un archivo .env basado en .env.example y configura los valores:
+#### Crea un archivo .env basado en .env.example y configura los valores:
 
 # Configuración de Base de Datos
 
-DB_USER=your_username
-DB_HOST=your_host
-DB_NAME=your_database_name
-DB_PASSWORD=your_password
-DB_PORT=5432
+- DB_USER=your_username
+- DB_HOST=your_host
+- DB_NAME=your_database_name
+- DB_PASSWORD=your_password
+- DB_PORT=5432
 
-# Configuración JWT
+#### Configuración JWT
 
 JWT_SECRET=your_jwt_secret
 NODE_ENV=development
 
-# Clave HERE MAPS
+#### Clave HERE MAPS
 
 HERE_MAPS_API_KEY=your_here_maps_key
 
