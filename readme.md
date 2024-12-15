@@ -82,8 +82,8 @@ npm install
 
 #### Configuración JWT
 
-JWT_SECRET=your_jwt_secret
-NODE_ENV=development
+- JWT_SECRET=your_jwt_secret
+- NODE_ENV=development
 
 #### Clave HERE MAPS
 
