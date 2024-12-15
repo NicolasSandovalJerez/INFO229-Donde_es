@@ -87,7 +87,7 @@ npm install
 
 #### Clave HERE MAPS
 
-HERE_MAPS_API_KEY=your_here_maps_key
+- HERE_MAPS_API_KEY=your_here_maps_key
 
 ## 4. Configurar la base de datos
 
