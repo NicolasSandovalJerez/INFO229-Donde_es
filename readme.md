@@ -54,25 +54,25 @@
 
 Sigue estos pasos para instalar y configurar el proyecto:
 
-### 1. Clonar el repositorio
+## 1. Clonar el repositorio
 
 ```bash
 git clone <url-del-repositorio>
 cd donde-es
 ```
 
-### 2. Instalar las dependencias del servidor
+## 2. Instalar las dependencias del servidor
 
 ```bash
 cd server
 npm install
 ```
 
-### 3. Configurar variables de entorno
+## 3. Configurar variables de entorno
 
 #### Crea un archivo .env basado en .env.example y configura los valores:
 
-# Configuración de Base de Datos
+#### Configuración de Base de Datos
 
 - DB_USER=your_username
 - DB_HOST=your_host
@@ -89,7 +89,7 @@ NODE_ENV=development
 
 HERE_MAPS_API_KEY=your_here_maps_key
 
-### 4. Configurar la base de datos
+## 4. Configurar la base de datos
 
 - Crea la base de datos en PostgreSQL.
 - Ejecuta el archivo dump_bd_donde-es.sql dentro de la base de datos creada previamente.
