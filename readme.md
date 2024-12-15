@@ -72,7 +72,7 @@ npm install
 
 ## Crea un archivo .env basado en .env.example y configura los valores:
 
-# Database Configuration
+# Configuración de Base de Datos
 
 DB_USER=your_username
 DB_HOST=your_host
@@ -80,12 +80,12 @@ DB_NAME=your_database_name
 DB_PASSWORD=your_password
 DB_PORT=5432
 
-# JWT Configuration
+# Configuración JWT
 
 JWT_SECRET=your_jwt_secret
 NODE_ENV=development
 
-# HERE MAPS API KEY
+# Clave HERE MAPS
 
 HERE_MAPS_API_KEY=your_here_maps_key
 
