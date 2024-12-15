@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Donde Es - Inicio</title>
+		<link rel="stylesheet" href="../styles/components/main.css" />
+		<link rel="stylesheet" href="../styles//components/global.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+		/>
+	</head>
+	<body>
+		<script src="../js/utils/checkAuth.js"></script>
+		<div class="container">
+			<header class="header">
+				<h1>Donde Es</h1>
+				<div class="user-info">
+					<span id="userId-display" class="user-id-text"></span>
+				</div>
+				<nav>
+					<ul class="nav-links">
+						<li><a href="#" class="active">Inicio</a></li>
+						<li><a href="./create.event.html">Crear Evento</a></li>
+						<li><a href="./mis-eventos.html">Mis Eventos</a></li>
+						<li><a href="./mi-perfil.html">Perfil</a></li>
+						<li><a href="#" class="logout-btn">Cerrar Sesión</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<main class="main-content">
+				<h2 class="eventos_cercanos_texto">Explora eventos cercanos</h2>
+				<div class="order-indicator">
+					<i class="fas fa-location-arrow"></i> Eventos ordenados por cercanía
+				</div>
+				<div class="event-cards">
+					<!-- Aquí se agregarán las tarjetas de eventos dinámicamente -->
+				</div>
+			</main>
+
+			<!-- Modal para mostrar detalles del evento -->
+			<div
+				class="modal"
+				role="dialog"
+				aria-modal="true"
+				aria-labelledby="modal-title"
+			>
+				<div class="modal-content">
+					<span class="close-btn" role="button" aria-label="Cerrar">&times;</span>
+					<h2 id="modal-title"></h2>
+					<div class="modal-body" role="document"></div>
+				</div>
+			</div>
+
+			<footer class="footer">
+				<p>&copy; 2024 Donde Es. Todos los derechos reservados.</p>
+			</footer>
+		</div>
+
+		<!-- Incluir el archivo JS para cargar los eventos -->
+		<script src="../js/components/events.js"></script>
+		<script type="module" src="../js/components/logout.js"></script>
+	</body>
+</html>

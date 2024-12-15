@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Mis Eventos - Donde Es</title>
+		<link rel="stylesheet" href="../styles/components/mis-eventos.css" />
+		<link rel="stylesheet" href="../styles/components/global.css" />
+	</head>
+	<body>
+		<script src="../js/utils/checkAuth.js"></script>
+		<div class="container">
+			<header class="header">
+				<h1>Donde Es</h1>
+				<nav>
+					<ul class="nav-links">
+						<li><a href="main.html">Inicio</a></li>
+						<li><a href="create.event.html">Crear Evento</a></li>
+						<li><a href="#" class="active">Mis Eventos</a></li>
+						<li><a href="./mi-perfil.html">Perfil</a></li>
+						<li><a href="#" class="logout-btn">Cerrar Sesión</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<main class="main-content">
+				<h2>Mis Eventos</h2>
+				<a href="create.event.html" class="create-event-btn">Crear Nuevo Evento</a>
+				<div class="events-section">
+					<div class="event-grid">
+						<!-- Los eventos se cargarán aquí dinámicamente -->
+					</div>
+				</div>
+			</main>
+
+			<footer class="footer">
+				<p>&copy; 2024 Donde Es. Todos los derechos reservados.</p>
+			</footer>
+		</div>
+
+		<script type="module" src="../js/components/mis-eventos.js"></script>
+		<script type="module" src="../js/components/logout.js"></script>
+	</body>
+</html>

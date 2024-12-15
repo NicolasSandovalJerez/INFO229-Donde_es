@@ -1,0 +1,114 @@
+/* Estilo general para la página */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+}
+
+/* Contenedor principal del perfil */
+.profile-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Título del perfil */
+.profile-container h1 {
+    color: #1e3c72;
+    margin-bottom: 1.5rem;
+}
+
+/* Caja del perfil */
+.profile-box {
+    padding: 1rem;
+}
+
+/* Encabezado del perfil con imagen */
+.profile-header {
+    margin-bottom: 2rem;
+}
+
+.profile-header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.edit-btn {
+    background-color: #1e3c72;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.edit-btn:hover {
+    background-color: #2a5298;
+}
+
+/* Información del perfil */
+.profile-details .profile-info {
+    margin-bottom: 1.2rem;
+    text-align: left;
+}
+
+.profile-details label {
+    font-weight: bold;
+    color: #333;
+}
+
+.profile-details input,
+.profile-details textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+/* Resaltar los inputs y textarea al pasar el ratón */
+.profile-details input:hover,
+.profile-details textarea:hover {
+    border-color: #2a5298;
+}
+
+/* Estilos especiales para el campo de biografía */
+.profile-details textarea {
+    resize: vertical;
+    /* Permite cambiar el tamaño verticalmente */
+    font-family: Arial, sans-serif;
+}
+
+/* Botón de enviar */
+.submit-btn {
+    background-color: #1e3c72;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+.submit-btn:hover {
+    background-color: #2a5298;
+}
+
+/* Estilo para mensajes de error */
+.error-message {
+    color: red;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}

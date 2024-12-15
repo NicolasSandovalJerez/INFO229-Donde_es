@@ -1,0 +1,217 @@
+/* Estilos globales */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #333;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 1.8rem;
+    color: #1e3c72;
+}
+
+/* Estilo para la barra de navegación */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+/* Contenido principal */
+.main-content {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-content h2 {
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.event-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    width: 100%;
+}
+
+/* Efecto de agrandamiento en la tarjeta de evento */
+.event-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Añadimos transición para suavizar el efecto */
+}
+
+.event-card:hover {
+    transform: scale(1.05);
+    /* Agranda la tarjeta un 5% */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    /* Sombra más intensa */
+    background-color: #f9f9f9;
+    /* Cambio de fondo ligeramente */
+}
+
+.event-card h3 {
+    color: #1e3c72;
+    margin-bottom: 0.5rem;
+}
+
+.event-card p {
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.event-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #1e3c72;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.event-btn:hover {
+    background-color: #2a5298;
+}
+
+
+/* Modal */
+.modal {
+    display: none;
+    /* Ocultamos el modal por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Fondo oscuro */
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 2rem;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal h2 {
+    color: #1e3c72;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.modal p {
+    color: #555;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.close-btn {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Mejoramos el contraste y legibilidad del mensaje de orden */
+.order-indicator {
+    background-color: rgba(255, 255, 255, 0.15);
+    /* Aumentamos ligeramente la opacidad */
+    color: #fff;
+    padding: 0.75rem 1.2rem;
+    /* Aumentamos el padding para más espacio */
+    border-radius: 4px;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    /* Aumentamos ligeramente el tamaño */
+    font-weight: 500;
+    /* Hacemos la letra un poco más gruesa */
+    letter-spacing: 0.3px;
+    /* Mejoramos el espaciado entre letras */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    /* Añadimos sombra sutil al texto */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.order-indicator i {
+    color: #fff;
+    font-size: 0.9rem;
+    /* Ajustamos el tamaño del ícono */
+}
+
+/* Opcionalmente, podríamos agregar un efecto hover sutil */
+.order-indicator:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.eventos_cercanos_texto {
+    font-size: 30px;
+    /* Cambia el valor a lo que prefieras */
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Agregar al final del archivo */
+@media (max-width: 768px) {
+    .event-cards {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+    }
+
+    .header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+}

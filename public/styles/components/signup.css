@@ -1,0 +1,102 @@
+/* Estilo general para la página */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+}
+
+/* Contenedor principal del formulario */
+.signup-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Título de la página */
+.signup-container h1 {
+    text-align: center;
+    color: #1e3c72;
+    margin-bottom: 1.5rem;
+}
+
+/* Caja donde se encuentran los formularios */
+.signup-box {
+    padding: 1rem;
+}
+
+/* Título dentro de la caja */
+.signup-box h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-align: center;
+}
+
+/* Estilos para los grupos de formularios */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+/* Estilo de los campos de texto */
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Botón de registro */
+.signup-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #1e3c72;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.signup-btn:hover {
+    background-color: #2a5298;
+}
+
+/* Mensaje de error */
+.error-message {
+    color: #dc3545;
+    text-align: center;
+    margin-top: 1rem;
+    display: none;
+}
+
+.error-message.show {
+    display: block;
+}
+
+/* Pie de la página para el enlace a login */
+.signup-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup-footer a {
+    color: #1e3c72;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-footer a:hover {
+    text-decoration: underline;
+}

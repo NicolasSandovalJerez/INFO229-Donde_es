@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Editar Perfil</title>
+		<link rel="stylesheet" href="../styles/components/user_profiles.css" />
+	</head>
+	<body>
+		<script src="../js/utils/checkAuth.js"></script>
+		<div class="container">
+			<div class="profile-container">
+				<h1>Editar Mi Perfil</h1>
+				<div class="profile-box">
+					<form id="profileForm" action="/submit-profile" method="POST">
+						<div class="profile-header">
+							<img
+								src="path/to/profile.jpg"
+								alt="Foto de perfil"
+								class="profile-img"
+							/>
+							<button type="button" class="edit-btn">Cambiar Foto</button>
+						</div>
+
+						<div class="profile-details">
+							<div class="profile-info">
+								<label for="full_name">Nombre Completo:</label>
+								<input
+									type="text"
+									id="full_name"
+									name="full_name"
+									value=""
+									required
+								/>
+							</div>
+
+							<div class="profile-info">
+								<label for="phone">Teléfono:</label>
+								<input type="tel" id="phone" name="phone" value="" required />
+							</div>
+
+							<div class="profile-info">
+								<label for="bio">Biografía:</label>
+								<textarea
+									id="bio"
+									name="bio"
+									rows="4"
+									placeholder="Escribe algo sobre ti..."
+								></textarea>
+							</div>
+
+							<div class="profile-info">
+								<label for="avatar_url">URL de la Foto de Perfil:</label>
+								<input type="text" id="avatar_url" name="avatar_url" value="" />
+							</div>
+						</div>
+
+						<button type="submit" class="submit-btn">Guardar Cambios</button>
+					</form>
+
+					<div id="error-message" class="error-message"></div>
+				</div>
+			</div>
+		</div>
+
+		<script src="../js/components/profileService.js"></script>
+		<script src="../js/components//logout.js"></script>
+	</body>
+</html>

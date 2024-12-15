@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Crear Evento - Donde Es</title>
+		<link rel="stylesheet" href="../styles/components/create-event.css" />
+		<link rel="stylesheet" href="../styles//components/global.css" />
+		<!-- HERE Maps CSS -->
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://js.api.here.com/v3/3.1/mapsjs-ui.css"
+		/>
+		<style>
+			.autocomplete-container {
+				position: relative;
+				width: 100%;
+			}
+			.autocomplete-results {
+				position: absolute;
+				top: 100%;
+				left: 0;
+				right: 0;
+				background: white;
+				border: 1px solid #ddd;
+				border-top: none;
+				z-index: 1000;
+				max-height: 200px;
+				overflow-y: auto;
+			}
+			.autocomplete-item {
+				padding: 10px;
+				cursor: pointer;
+			}
+			.autocomplete-item:hover {
+				background-color: #f0f0f0;
+			}
+		</style>
+	</head>
+	<body>
+		<script src="../js/utils/checkAuth.js"></script>
+		<div class="container">
+			<header class="header">
+				<h1>Crear Evento</h1>
+				<nav>
+					<ul class="nav-links">
+						<li><a href="main.html">Inicio</a></li>
+						<li><a href="#" class="active">Crear Evento</a></li>
+						<li><a href="./mis-eventos.html">Mis Eventos</a></li>
+						<li><a href="./mi-perfil.html">Perfil</a></li>
+						<li><a href="#" class="logout-btn">Cerrar Sesión</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<main class="main-content">
+				<h2>Detalles del Evento</h2>
+				<form id="create-event-form">
+					<div>
+						<label for="title">Título:</label>
+						<input type="text" id="title" name="title" required />
+					</div>
+
+					<div>
+						<label for="description">Descripción:</label>
+						<textarea id="description" name="description" required></textarea>
+					</div>
+
+					<div>
+						<label for="start-date">Fecha de inicio:</label>
+						<input
+							type="datetime-local"
+							id="start-date"
+							name="start-date"
+							required
+						/>
+					</div>
+
+					<div>
+						<label for="end-date">Fecha de fin:</label>
+						<input type="datetime-local" id="end-date" name="end-date" required />
+					</div>
+
+					<div class="location-container">
+						<label for="location">Ubicación:</label>
+						<div class="autocomplete-container">
+							<input
+								type="text"
+								id="location"
+								name="location"
+								placeholder="Ingresa la ubicación"
+								required
+							/>
+							<div id="autocomplete-results" class="autocomplete-results"></div>
+						</div>
+					</div>
+
+					<!-- Agregamos los campos de latitud y longitud -->
+					<div>
+						<label for="latitude">Latitud:</label>
+						<input type="text" id="latitude" name="latitude" readonly />
+					</div>
+
+					<div>
+						<label for="longitude">Longitud:</label>
+						<input type="text" id="longitude" name="longitude" readonly />
+					</div>
+
+					<div>
+						<label for="is-private">Evento privado:</label>
+						<input type="checkbox" id="is-private" name="is-private" />
+					</div>
+
+					<button type="submit">Crear Evento</button>
+				</form>
+			</main>
+
+			<footer class="footer">
+				<p>&copy; 2024 Donde Es. Todos los derechos reservados.</p>
+			</footer>
+		</div>
+
+		<!-- HERE Maps scripts -->
+		<script src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+		<script src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+		<script src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+		<script src="https://js.api.here.com/v3/3.1/mapsjs-places.js"></script>
+		<script type="module" src="../js/components/create-event.js"></script>
+		<script type="module" src="../js/components/logout.js"></script>
+	</body>
+</html>

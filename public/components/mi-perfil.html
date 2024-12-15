@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Mi Perfil - Donde Es</title>
+		<link rel="stylesheet" href="../styles/components/mi-perfil.css" />
+		<link rel="stylesheet" href="../styles/components/global.css" />
+	</head>
+	<body>
+		<script src="../js/utils/checkAuth.js"></script>
+		<div class="container">
+			<header class="header">
+				<h1>Donde Es</h1>
+				<nav>
+					<ul class="nav-links">
+						<li><a href="main.html">Inicio</a></li>
+						<li><a href="create.event.html">Crear Evento</a></li>
+						<li><a href="mis-eventos.html">Mis Eventos</a></li>
+						<li><a href="#" class="active">Mi Perfil</a></li>
+						<li><a href="#" class="logout-btn">Cerrar Sesión</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<main class="main-content">
+				<div class="profile-container">
+					<div class="profile-header">
+						<img
+							src="../images/default-avatar.png"
+							alt="Foto de perfil"
+							class="profile-img"
+						/>
+						<h2 id="username"></h2>
+					</div>
+					<div class="profile-details">
+						<p><strong>Nombre Completo:</strong> <span id="full_name"></span></p>
+						<p><strong>Correo Electrónico:</strong> <span id="email"></span></p>
+						<p><strong>Biografía:</strong></p>
+						<p id="bio"></p>
+						<p><strong>Teléfono:</strong> <span id="phone"></span></p>
+						<p><strong>Fecha de Registro:</strong> <span id="created_at"></span></p>
+					</div>
+					<a href="#" class="edit-profile-btn">Editar Perfil (no funcional)</a>
+				</div>
+			</main>
+
+			<footer class="footer">
+				<p>&copy; 2024 Donde Es. Todos los derechos reservados.</p>
+			</footer>
+		</div>
+
+		<script type="module" src="../js/components/mi-perfil.js"></script>
+		<script type="module" src="../js/components/logout.js"></script>
+	</body>
+</html>
