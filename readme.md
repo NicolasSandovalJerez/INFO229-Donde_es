@@ -63,8 +63,10 @@ cd donde-es
 
 ### 2. Instalar las dependencias del servidor
 
+```bash
 cd server
 npm install
+```
 
 ### 3. Configurar variables de entorno
 
@@ -111,11 +113,13 @@ donde-es/
 
 1. Iniciar el servidor:
 
-- cd server
-- npm run dev # Para desarrollo
-- npm start # Para producción
+```bash
+  cd server
+  npm run dev # Para desarrollo
+  npm start # Para producción
+```
 
-2. Acceder a la aplicación:
+1. Acceder a la aplicación:
 
 - Abre http://localhost:3000 en tu navegador. La aplicación estará disponible en este URL.
 
